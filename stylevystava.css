@@ -57,7 +57,7 @@ s #showcase #overlay {
   
   @keyframes mymove {
    100% {
-       transform: translate(200px) scale(2) ;
+       transform: translate(400px) scale(2) ;
    }
 
   }
