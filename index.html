@@ -9,31 +9,41 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylevystava.css">
+    
+        <link rel="stylesheet" href="stylevystava.css">
     <title>Výstava-Příbor</title>
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=KoHo&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome Icons -->
+
+    <script src="https://kit.fontawesome.com/15afa27451.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
-
+<!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Domů</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section-about">About Us</a>
+                        <a class="nav-link" href="#section-about">O nás</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#carouselExampleControls">Galery</a>
+                        <a class="nav-link" href="#carouselExampleControls">Galerie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Icon</a>
@@ -49,39 +59,40 @@
             </div>
         </div>
     </nav>
-
+<!-- Home -->
     <section id="showcase" class="d-flex justify-content-center align-items-center">
         <div id="overlay"></div>
         <div id="header" class="container text-white text-center">
-            <!-- <h3 class="display-5 mb-0">MODERN CAMPING</h3> -->
+       
             <h1 class="display-1">VÝSTAVA "Energie v kosmu"</h1>
-            <p class="lead d-none d-md-block">Městská Galerie Příbor</p>
-            <button id="book" class="btn btn-lg btn-primary px-5" data-bs-toggle="modal"
-                data-bs-target="#exampleModal2">Vstupenky</button>
-            <button id="book" class="btn btn-lg btn-primary px-5" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Přehled</button>
+            <p class="lead d-none d-md-block color">Galerie města Příbora</p>
+            
+            <button class="btn btn-lg btn-primary px-5 book1" data-bs-customClass="beautifier" data-bs-toggle="tooltip modal" data-bs-target="#exampleModal2" data-bs-placement="top" title="Zde si můžete objednat vstupenky">Vstupenky</button>           
+            <button class="btn btn-lg btn-primary px-5 book1" data-bs-toggle="popover modal" data-bs-target="#exampleModal"  title="Ukáže inkonku" data-bs-content="And here's some amazing  content. It's very engaging. Right?">Přehled</button>
+            
+           
 
         </div>
     </section>
-
+<!-- O nás -->
     <section id="section-about">
         <div class="container text-center mt-5">
-            <h2>ABOUT US</h2>
+            <h2>O NÁS</h2>
             <div class="row">
                 <div class="col-md-4 p-3">
                     <img src="petr.jpg" alt="" class="img-fluid d-none d-md-inline">
                     <h3>Petr Novák</h3>
-                    <p-lead>Hlavní organizátor výstavy.</p-lead>
+                    <p-lead id="text1">Hlavní organizátor výstavy.</p-lead>
                 </div>
                 <div class="col-md-4 p-3">
                     <img src="anezka.png" alt="" class="img-fluid d-none d-md-inline">
                     <h3>Anežka Ermisová</h3>
-                    <p-lead>Umělecká ředitelka.</p-lead>
+                    <p-lead id="text2">Umělecká ředitelka.</p-lead>
                 </div>
                 <div class="col-md-4 p-3">
                     <img src="lada.jpg" alt="" class="img-fluid d-none d-md-inline">
                     <h3>Ladislav Novák</h3>
-                    <p-lead>Ten co to platí.</p-lead>
+                    <p-lead id="text3">Ten co to platí.</p-lead>
                 </div>
             </div>
         </div>
@@ -90,33 +101,45 @@
     <h2 class="text-center">GALERIE</h2>
     <hr class="border">
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="caribou.png" class="d-block w-100" alt="...">
+<!-- Galerie -->
+
+
+
+    <div class="container d-flex align-items-center h-100">
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="caribou.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="coffee.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="fire.png" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="coffee.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="fire.png" class="d-block w-100" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
 
     <hr class="border">
     <h2 class="text-center">OHLASY NÁVŠTĚVNÍKŮ</h2>
     <hr class="border">
+
+ <!-- Ohlasy návštěvníků -->
+<div class="container d-flex align-items-center h-100">
 
     <div class="ohlasy row row-cols-1 row-cols-md-2 g-4">
         <div class="col">
@@ -157,33 +180,41 @@
             </div>
         </div>
     </div>
+    
+    
+</div>
 
-    <hr class="border">
-    <h2 class="text-center">KONTAKTNÍ FORMULÁŘ</h2>
-    <hr class="border">
+<hr class="border">
+<h2 class="text-center">KONTAKTNÍ FORMULÁŘ</h2>
+<hr class="border">
 
+ <!-- Formulář -->
+    <div class="container d-flex col-3 align-items-center h-100">
 
-    <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+    </div>
+
 
     <hr class="border">
     <h2 class="text-center">MAPA</h2>
     <hr class="border">
-
+ <!-- Mapa -->
     <section>
         <div class="container mapa">
             <iframe
@@ -195,35 +226,45 @@
     <hr class="border">
     <h2 class="text-center">KONTAKTY</h2>
     <hr class="border">
-
+ <!-- Footer -->
     <section id="footer" class="bg-secondary p-3">
         <ul class="nav text-center justify-content-center flex-column flex-sm-row">
             <li class="nav-item">
                 <a href="" class="nav-link text-white">MAIL</a>
+                <i class="far fa-envelope "></i>
                 <!-- <div>petr-novak-donald@protonmail.com</div> -->
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">TELEFON</a>
+                <i class="fas fa-phone"></i>
                 <!-- <div>773162304</div> -->
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">ADRESA</a>
+                <i class="fas fa-map-marker-alt"></i>
                 <!-- <div>ČSA 1379, Příbor</div> -->
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">FB</a>
+                <i class="fab fa-facebook-square"></i>
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">Twitter</a>
+                <i class="fab fa-twitter-square"></i>
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">TikTok</a>
+                <i class="fab fa-tiktok"></i>
             </li>
             <li class="nav-item">
                 <a href="" class="nav-link text-white">Instagram</a>
+                <i class="fab fa-instagram"></i>
             </li>
         </ul>
     </section>
+
+
+   
 
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -282,8 +323,21 @@
 
 
 
+<!-- <script>
+    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+  trigger: 'focus'
+})
+
+var exampleEl = document.getElementById('example')
+var popover = new bootstrap.Popover(exampleEl, options)
+</script> -->
+
+<!-- <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 
 
+<span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+  </span> -->
 
 
 
