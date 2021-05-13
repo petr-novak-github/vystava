@@ -9,3 +9,4 @@ Dodelani oprav:
 2) Popover mi nejde -nevim proc jdu dal
 3) Google fonts pouziti, v sekci o nas, u kazdeho jine pismo 
 4) Font Awsome Ikonky pridany do footru
+5) Animace loading uz se i zvetsuje
